@@ -64,15 +64,14 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 jump = new(0.0f, 10f, 0.0f);
             rb.AddForce(jump * strength, ForceMode.Impulse);
-            Debug.Log("Jumped");
         }
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        float ang = Vector3.Angle(collision.contacts[0].normal, Vector3.up);
+        float angle = Vector3.Angle(collision.contacts[0].normal, Vector3.up);
 
-        if (ang <= 45)
+        if (angle <= 45)
         {
             onGround = true;
         }

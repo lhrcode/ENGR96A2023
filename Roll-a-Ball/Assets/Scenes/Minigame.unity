@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  strength: 1
+  strength: 0.5
   countText: {fileID: 260865915}
   winTextObject: {fileID: 1463628925}
 --- !u!114 &1845116332
